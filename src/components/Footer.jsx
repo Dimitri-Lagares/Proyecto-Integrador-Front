@@ -1,4 +1,3 @@
-import './Footer.css'
 import * as React from 'react';
 import { useState } from 'react';
 import axios from 'axios';
@@ -68,7 +67,8 @@ export const Footer = () => {
   }
 
   return (
-<footer>  
+    <footer style={{border:'solid', borderRadius:8, borderColor:'lightgray'}} >
+      <Typography>Deja aqui tus datos para saber mas sobre ti</Typography>
 
   <div>
     {showWarningAlert &&  <Alert severity="warning">Debes de llenar todos los campos</Alert>}
@@ -133,7 +133,7 @@ export const Footer = () => {
           onChange={onChangeComentario}
         />
 
-          <Button variant='contained' endIcon={<Send />} onClick={buttonSave}>
+          <Button sx={{m:1}} variant='contained' endIcon={<Send />} onClick={buttonSave}>
           Enviar
           </Button>
       </Box>
@@ -155,7 +155,8 @@ export const Footer = () => {
           <Email/>
           </IconButton>
     
-          <Typography variant={"inherit"} className='email' fontSize={19}>lagares.dimitri@gmail.com</Typography>
+          <Typography variant={"inherit"} sx={{alignSelf: 'center'}} fontSize={19}>lagares.dimitri@gmail.com</Typography>
+          <Typography variant={"inherit"} sx={{alignSelf: 'center'}} fontSize={19}>+57 3236642619</Typography>
       </Stack>
     </div>
   </footer>
