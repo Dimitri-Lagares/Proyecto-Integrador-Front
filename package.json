@@ -1,15 +1,13 @@
 {
   "name": "proyecto-integrador-front",
-  "homepage": " https://dragonsarms.github.io/proyecto-integrador-front/",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "deploy": "gh-pages -d dist",
-    "host": "vite --host"
+    "host": "vite --host",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
