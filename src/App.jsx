@@ -30,12 +30,12 @@ window.addEventListener('focus', () => {
       <BrowserRouter >
         <Routes>
         <Route element={<ProtectedRoute  isAllowed={isAllowed}/>}>
-          <Route path="/solicitudes" element={<Solicitudes/>} />
+          <Route path="solicitudes" element={<Solicitudes/>} />
           </Route>
           <Route index element={<Home/>}/>
           <Route path='/' element={<Home/>}/>
           <Route path="*" element={<Navigate to={'/'}/>}/>
-          <Route path='/inicio-sesion' element={<Login childToParentData={functionToGetchildData}/>}/>
+          <Route path='inicio-sesion' element={<Login childToParentData={functionToGetchildData}/>}/>
         </Routes>
       </BrowserRouter>
     </div>
